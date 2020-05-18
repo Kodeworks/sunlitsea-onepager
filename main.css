@@ -123,6 +123,15 @@ div.partners div.row div {
     margin-right: auto;
   }
 }
+div.partners div.row div p {
+  margin: 0;
+  text-align: center;
+}
+div.partners div.row div img {
+  max-width: 170px;
+  max-height: 60px;
+  margin-left: -10px;
+}
 
 div.footer-container {
   margin-top: 70px;
