@@ -4,6 +4,11 @@
   margin-right: auto;
   max-width: $maxWidth;
 }
+$mainBlue: rgb(30, 78, 121);
+
+html * {
+  box-sizing: border-box;
+}
 
 header,
 footer,
@@ -38,15 +43,22 @@ div.header-separator {
   img {
     width: 30%;
     border-radius: 15px;
+    @media screen and (max-width: 570px) {
+      visibility: hidden;
+    }
   }
   h1 {
     width: 240px;
+    @media screen and (max-width: 570px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: rgb(30, 78, 121);
+  color: $mainBlue;
 }
 
 ul.main-points {
@@ -76,4 +88,51 @@ h1 {
 h2 {
   font-size: 37px;
   font-weight: normal;
+}
+
+div.partners {
+  div.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 570px) {
+      justify-content: center;
+    }
+    margin-bottom: 21px;
+    div {
+      padding: 10px;
+      @media screen and (max-width: 570px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      margin-top: 21px;
+      width: 182px;
+      height: 126px;
+      border: solid 2px $mainBlue;
+      border-radius: 15px;
+    }
+  }
+}
+
+div.footer-container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 570px) {
+    justify-content: center;
+    flex-direction: column;
+  }
+  div {
+    padding: 6px;
+    @media screen and (max-width: 570px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    font-size: 11px;
+    width: 182px;
+    margin-bottom: 12px;
+    border: solid 1px $mainBlue;
+    height: 49px;
+    border-radius: 7px;
+  }
 }
