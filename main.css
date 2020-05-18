@@ -1,0 +1,86 @@
+header,
+footer,
+div.great-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+header .section,
+footer .section,
+div.great-container .section {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+ul {
+  margin: 24px;
+}
+
+header {
+  margin-top: 64px;
+}
+
+img.banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: min(1060px, 100%);
+}
+
+div.header-separator {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+div.header-separator {
+  display: flex;
+  flex-flow: row nowrap;
+}
+div.header-separator img {
+  width: 30%;
+  border-radius: 15px;
+}
+div.header-separator h1 {
+  width: 240px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1e4e79;
+}
+
+ul.main-points {
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+ul.secondary {
+  line-height: 1.4;
+}
+
+header > h1 {
+  margin-bottom: 0;
+}
+
+header > h2 {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 37px;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=main.css.map */
