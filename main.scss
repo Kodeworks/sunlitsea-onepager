@@ -58,7 +58,7 @@ div.header-separator {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: $mainBlue;
+  color: #444;
 }
 
 ul.main-points {
@@ -80,6 +80,7 @@ h1,
 h2 {
   font-family: "Roboto Slab", serif;
   text-align: center;
+  color: $mainBlue;
 }
 h1 {
   font-size: 37px;
