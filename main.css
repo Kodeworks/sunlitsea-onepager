@@ -1,164 +1,115 @@
-html * {
+* {
   box-sizing: border-box;
 }
 
-header,
-footer,
-div.great-container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
+@font-face {
+  font-family: "Everett";
+  font-weight: normal;
+  src: url("fonts/Everett-Regular-web.woff") format("woff");
 }
-header .section,
-footer .section,
-div.great-container .section {
-  margin-top: 36px;
-  margin-bottom: 36px;
+@font-face {
+  font-family: "Everett";
+  font-weight: 500;
+  src: url("fonts/Everett-Medium-web.woff") format("woff");
 }
-
-ul {
-  margin: 24px;
+@font-face {
+  font-family: "Everett";
+  font-weight: bold;
+  src: url("fonts/Everett-Bold-web.woff") format("woff");
 }
-
-header {
-  margin-top: 64px;
-}
-
-img.banner {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: min(1060px, 100%);
-}
-
-div.header-separator {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-div.header-separator {
-  display: flex;
-  flex-flow: row nowrap;
-}
-div.header-separator img {
-  width: 30%;
-  border-radius: 15px;
-}
-@media screen and (max-width: 570px) {
-  div.header-separator img {
-    visibility: hidden;
-  }
-}
-div.header-separator h1 {
-  width: 240px;
-}
-@media screen and (max-width: 570px) {
-  div.header-separator h1 {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 body {
-  font-family: "Roboto", sans-serif;
-  color: #444;
-}
-
-ul.main-points {
-  font-size: 28px;
-  line-height: 1.4;
-}
-
-ul.secondary {
-  line-height: 1.4;
-}
-
-header > h1 {
-  margin-bottom: 0;
-}
-
-header > h2 {
-  margin-top: 0;
-}
-
-h1,
-h2 {
-  font-family: "Roboto Slab", serif;
-  text-align: center;
-  color: #1e4e79;
+  margin: 0;
 }
 
 h1 {
-  font-size: 37px;
-  font-weight: bold;
+  font-family: "Everett", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
 }
 
-h2 {
-  font-size: 37px;
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
+  font-size: 18px;
 }
 
-div.partners div.row {
+section.page {
+  min-height: 600px;
+}
+
+section.page-1 {
+  background: #fff;
+}
+section.page-1 .top-bar {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 21px;
+  margin: calc(56px - 8px) 56px;
 }
-@media screen and (max-width: 570px) {
-  div.partners div.row {
-    justify-content: center;
-  }
+section.page-1 .top-bar .great-heading {
+  color: #101010;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
-div.partners div.row div {
-  padding: 10px;
-  margin-top: 21px;
-  width: 182px;
-  height: 126px;
-  border: solid 2px #1e4e79;
-  border-radius: 15px;
+section.page-1 .top-bar .great-heading .sunlitesa-logo {
+  position: relative;
+  top: -2px;
+  margin-right: 15px;
 }
-@media screen and (max-width: 570px) {
-  div.partners div.row div {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-div.partners div.row div p {
+section.page-1 .top-bar .great-heading h1 {
   margin: 0;
-  text-align: center;
+  letter-spacing: 0.1rem;
 }
-div.partners div.row div img {
-  max-width: 170px;
-  max-height: 60px;
-  margin-left: -10px;
+section.page-1 div.unsplash {
+  position: relative;
+  max-width: 100vw;
+  margin: 0 56px;
+}
+section.page-1 div.unsplash .unsplash-slogan {
+  position: absolute;
+  bottom: 62px;
+  color: #fff;
+  margin-left: 117px;
+  font-size: 66px;
+  font-family: "Everett";
+  font-weight: 500;
+}
+section.page-1 div.unsplash .unsplash-slogan span.solar {
+  color: #ffe775;
+}
+section.page-1 div.unsplash img {
+  width: 100%;
+  max-height: 570px;
+  object-fit: cover;
+}
+section.page-1 div.sub-slogan {
+  margin: 56px;
+  margin-left: calc(56px + 100px);
 }
 
-div.footer-container {
-  margin-top: 70px;
+section.page-2 {
+  padding-top: 1px;
+  background-color: #fff1a3;
+}
+section.page-2 div.three-points {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  margin: 56px;
 }
-@media screen and (max-width: 570px) {
-  div.footer-container {
-    justify-content: center;
-    flex-direction: column;
-  }
+section.page-2 div.three-points h3:first-child {
+  margin-right: 56px;
 }
-div.footer-container div {
-  padding: 6px;
-  font-size: 11px;
-  width: 182px;
-  margin-bottom: 12px;
-  border: solid 1px #1e4e79;
-  height: 49px;
-  border-radius: 7px;
+section.page-2 div.three-points h3:nth-child(2) {
+  margin-right: 56px;
+  margin-left: 56px;
 }
-@media screen and (max-width: 570px) {
-  div.footer-container div {
-    margin-left: auto;
-    margin-right: auto;
-  }
+section.page-2 div.three-points h3:last-child {
+  margin-left: 56px;
+}
+
+html * {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */
