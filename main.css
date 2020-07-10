@@ -1,164 +1,312 @@
-html * {
+* {
   box-sizing: border-box;
 }
 
-header,
-footer,
-div.great-container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
-}
-header .section,
-footer .section,
-div.great-container .section {
-  margin-top: 36px;
-  margin-bottom: 36px;
+a {
+  text-decoration: none;
+  color: #101010;
 }
 
-ul {
-  margin: 24px;
+@font-face {
+  font-family: "Everett";
+  font-weight: normal;
+  src: url("fonts/Everett-Regular-web.woff") format("woff");
 }
-
-header {
-  margin-top: 64px;
+@font-face {
+  font-family: "Everett";
+  font-weight: 500;
+  src: url("fonts/Everett-Medium-web.woff") format("woff");
 }
-
-img.banner {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: min(1060px, 100%);
+@font-face {
+  font-family: "Everett";
+  font-weight: bold;
+  src: url("fonts/Everett-Bold-web.woff") format("woff");
 }
-
-div.header-separator {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-div.header-separator {
-  display: flex;
-  flex-flow: row nowrap;
-}
-div.header-separator img {
-  width: 30%;
-  border-radius: 15px;
-}
-@media screen and (max-width: 570px) {
-  div.header-separator img {
-    visibility: hidden;
-  }
-}
-div.header-separator h1 {
-  width: 240px;
-}
-@media screen and (max-width: 570px) {
-  div.header-separator h1 {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 body {
-  font-family: "Roboto", sans-serif;
-  color: #444;
-}
-
-ul.main-points {
-  font-size: 28px;
-  line-height: 1.4;
-}
-
-ul.secondary {
-  line-height: 1.4;
-}
-
-header > h1 {
-  margin-bottom: 0;
-}
-
-header > h2 {
-  margin-top: 0;
-}
-
-h1,
-h2 {
-  font-family: "Roboto Slab", serif;
-  text-align: center;
-  color: #1e4e79;
+  margin: 0;
 }
 
 h1 {
-  font-size: 37px;
-  font-weight: bold;
+  font-family: "Everett", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+div.inner-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+}
+@media only screen and (max-width: 1100px) {
+  div.inner-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+h1.section-header {
+  font-size: 64px;
+  font-weight: 400;
 }
 
 h2 {
-  font-size: 37px;
+  font-family: "Everett", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
+  font-size: 18px;
 }
 
-div.partners div.row {
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+section.page {
+  min-height: 600px;
+}
+
+section.section-1 {
+  background: #fff;
+}
+section.section-1 .top-bar {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 21px;
+  margin: calc(56px - 8px) 56px;
 }
-@media screen and (max-width: 570px) {
-  div.partners div.row {
-    justify-content: center;
-  }
+section.section-1 .top-bar .great-heading {
+  color: #101010;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
-div.partners div.row div {
-  padding: 10px;
-  margin-top: 21px;
-  width: 182px;
-  height: 126px;
-  border: solid 2px #1e4e79;
-  border-radius: 15px;
+section.section-1 .top-bar .great-heading .sunlitesa-logo {
+  position: relative;
+  top: -1px;
+  margin-right: 15px;
 }
-@media screen and (max-width: 570px) {
-  div.partners div.row div {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-div.partners div.row div p {
+section.section-1 .top-bar .great-heading h1 {
   margin: 0;
-  text-align: center;
+  letter-spacing: 0.1rem;
 }
-div.partners div.row div img {
-  max-width: 170px;
-  max-height: 60px;
-  margin-left: -10px;
+section.section-1 div.unsplash {
+  position: relative;
+  max-width: 100vw;
+  margin: 0 56px;
+}
+section.section-1 div.unsplash .unsplash-slogan {
+  position: absolute;
+  bottom: 62px;
+  color: #fff;
+  margin-left: 117px;
+  font-size: 66px;
+  font-family: "Everett";
+  font-weight: 500;
+}
+section.section-1 div.unsplash .unsplash-slogan span.solar {
+  color: #ffe775;
+}
+section.section-1 div.unsplash img {
+  width: 100%;
+  max-height: 570px;
+  object-fit: cover;
+}
+section.section-1 div.value-proposition {
+  margin: 56px 173px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+section.section-1 div.value-proposition p.label {
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+section.section-1 div.value-proposition div.content {
+  margin-left: 50px;
 }
 
-div.footer-container {
-  margin-top: 70px;
+section.section-2 {
+  background-color: #fff1a3;
+  padding: 120px 0;
+}
+section.section-2 div.between-page-header {
+  margin: 0 173px;
+}
+section.section-2 div.between-page-header h1.section-header {
+  margin-top: 4px;
+}
+section.section-2 div.preview-link {
   display: flex;
+  align-items: center;
+}
+section.section-2 div.preview-link p.link {
+  margin: 0;
+  font-family: "Everett";
+}
+section.section-2 div.preview-link img.link-arrow {
+  margin-left: 10px;
+  height: 12px;
+}
+
+section.section-3 {
+  background-color: #101010;
+  height: 600px;
+  color: white;
+}
+section.section-3 div.section-3-inner {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+section.section-3 div.section-3-inner div.points {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+section.section-3 div.section-3-inner div.points span.bullet {
+  color: #fff1a3;
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  top: -3px;
+}
+section.section-3 div.section-3-inner div.points span {
+  margin-top: 24px;
+  font-size: 24px;
+  font-family: "Everett";
+}
+
+section.section-4 {
+  background-color: #cbd3f0;
+  padding-top: 1px;
+  padding-bottom: 100px;
+}
+section.section-4 div.section-inner {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
-@media screen and (max-width: 570px) {
-  div.footer-container {
-    justify-content: center;
-    flex-direction: column;
+section.section-4 div.section-inner div.point-grid {
+  display: grid;
+  width: 45%;
+  grid-template-columns: 1fr;
+  grid-column-gap: 100px;
+  grid-row-gap: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+section.section-4 div.section-inner div.image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+section.section-4 div.section-inner div.image img {
+  width: 100%;
+}
+
+section.section-5 div.partners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 50px;
+  grid-auto-rows: 200px;
+}
+section.section-5 div.partners h3 {
+  font-size: 28px;
+  font-family: "Everett", sans-serif;
+}
+section.section-5 div.partners > div {
+  min-width: 0;
+}
+section.section-5 div.partners > div div.partners-logo {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section.section-5 div.partners > div div.partners-logo > * {
+  max-width: 100%;
+  max-height: 65px;
+}
+section.section-5 div.partners > div.innovation-norway {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+section.footer {
+  background-color: #101010;
+  height: 300px;
+  padding-top: 60px;
+}
+@media only screen and (max-width: 1100px) {
+  section.footer {
+    height: 400px;
   }
 }
-div.footer-container div {
-  padding: 6px;
-  font-size: 11px;
-  width: 182px;
-  margin-bottom: 12px;
-  border: solid 1px #1e4e79;
-  height: 49px;
-  border-radius: 7px;
+section.footer div.footer-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: white;
 }
-@media screen and (max-width: 570px) {
-  div.footer-container div {
-    margin-left: auto;
-    margin-right: auto;
+section.footer div.footer-row div.grid {
+  width: 100%;
+  display: grid;
+  margin-left: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 50px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 1100px) {
+  section.footer div.footer-row div.grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 80px);
   }
+}
+section.footer div.footer-row div.grid div.copyright {
+  grid-column: 1;
+  grid-row: 2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 1100px) {
+  section.footer div.footer-row div.grid div.copyright {
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px;
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+section.footer div.footer-row div.grid a {
+  text-decoration: underline;
+  color: white;
+}
+section.footer div.footer-row div.grid address {
+  font-style: normal;
+}
+section.footer div.footer-row div.logo {
+  margin-left: 56px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-width: 225px;
+}
+section.footer div.footer-row .sunlitesa-logo {
+  position: relative;
+  top: -1px;
+  margin-right: 15px;
+}
+section.footer div.footer-row h1 {
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+html * {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */
