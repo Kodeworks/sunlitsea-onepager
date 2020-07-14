@@ -35,13 +35,12 @@ h1 {
 div.inner-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  max-width: 1100px;
 }
 
 h1.section-header {
-  font-size: 50px;
-  margin-top: 140px;
-  margin-bottom: 80px;
+  font-size: 64px;
+  font-weight: 400;
 }
 
 h2 {
@@ -121,15 +120,13 @@ section.section-1 div.value-proposition p.label {
 }
 section.section-2 {
   background-color: #fff1a3;
-  min-height: 300px;
-  padding-top: 0.1px;
+  padding: 120px 0;
 }
 section.section-2 div.between-page-header {
-  margin: 56px 173px;
+  margin: 0 173px;
 }
 section.section-2 div.between-page-header h1.section-header {
   margin-top: 4px;
-  margin-bottom: 50px;
 }
 section.section-2 div.preview-link {
   display: flex;
@@ -144,9 +141,31 @@ section.section-2 div.preview-link img.link-arrow {
   height: 12px;
 }
 
+section.section-3 {
+  background-color: #101010;
+  height: 600px;
+  color: white;
+}
+section.section-3 div.section-3-inner {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+section.section-3 div.section-3-inner div.points {
+  display: flex;
+  flex-direction: column;
+}
+section.section-3 div.section-3-inner div.points span {
+  margin-top: 24px;
+  font-size: 24px;
+  font-family: "Everett";
+}
+
 section.section-4 {
   padding-top: 1px;
   background-color: #cbd3f0;
+  padding-bottom: 120px;
 }
 section.section-4 div.image {
   display: flex;
@@ -155,13 +174,13 @@ section.section-4 div.image {
 }
 section.section-4 div.image img.unsplash {
   width: 100%;
-  max-width: 960px;
+  max-width: 1100px;
 }
 section.section-4 div.three-points {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 56px auto;
-  max-width: 960px;
+  max-width: 1100px;
 }
 section.section-4 div.three-points h3:first-child {
   margin-right: 56px;
@@ -174,7 +193,7 @@ section.section-4 div.three-points h3:last-child {
   margin-left: 56px;
 }
 section.section-4 div.main-points {
-  max-width: 960px;
+  max-width: 1100px;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
