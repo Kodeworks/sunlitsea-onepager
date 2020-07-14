@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #101010;
+}
+
 @font-face {
   font-family: "Everett";
   font-weight: normal;
@@ -27,46 +32,68 @@ h1 {
   font-size: 30px;
 }
 
+div.inner-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+
+h1.section-header {
+  font-size: 50px;
+  margin-top: 140px;
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-family: "Everett", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
 h3 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
 }
 
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 section.page {
   min-height: 600px;
 }
 
-section.page-1 {
+section.section-1 {
   background: #fff;
 }
-section.page-1 .top-bar {
+section.section-1 .top-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: calc(56px - 8px) 56px;
 }
-section.page-1 .top-bar .great-heading {
+section.section-1 .top-bar .great-heading {
   color: #101010;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-section.page-1 .top-bar .great-heading .sunlitesa-logo {
+section.section-1 .top-bar .great-heading .sunlitesa-logo {
   position: relative;
   top: -2px;
   margin-right: 15px;
 }
-section.page-1 .top-bar .great-heading h1 {
+section.section-1 .top-bar .great-heading h1 {
   margin: 0;
   letter-spacing: 0.1rem;
 }
-section.page-1 div.unsplash {
+section.section-1 div.unsplash {
   position: relative;
   max-width: 100vw;
   margin: 0 56px;
 }
-section.page-1 div.unsplash .unsplash-slogan {
+section.section-1 div.unsplash .unsplash-slogan {
   position: absolute;
   bottom: 62px;
   color: #fff;
@@ -75,37 +102,85 @@ section.page-1 div.unsplash .unsplash-slogan {
   font-family: "Everett";
   font-weight: 500;
 }
-section.page-1 div.unsplash .unsplash-slogan span.solar {
+section.section-1 div.unsplash .unsplash-slogan span.solar {
   color: #ffe775;
 }
-section.page-1 div.unsplash img {
+section.section-1 div.unsplash img {
   width: 100%;
   max-height: 570px;
   object-fit: cover;
 }
-section.page-1 div.sub-slogan {
-  margin: 56px;
-  margin-left: calc(56px + 100px);
-}
-
-section.page-2 {
-  padding-top: 1px;
-  background-color: #fff1a3;
-}
-section.page-2 div.three-points {
+section.section-1 div.value-proposition {
+  margin: 56px 173px;
   display: flex;
   flex-direction: row;
-  margin: 56px;
 }
-section.page-2 div.three-points h3:first-child {
+section.section-1 div.value-proposition p.label {
+  font-weight: bold;
+  width: 300px;
+}
+section.section-2 {
+  background-color: #fff1a3;
+  min-height: 300px;
+  padding-top: 0.1px;
+}
+section.section-2 div.between-page-header {
+  margin: 56px 173px;
+}
+section.section-2 div.between-page-header h1.section-header {
+  margin-top: 4px;
+  margin-bottom: 50px;
+}
+section.section-2 div.preview-link {
+  display: flex;
+  align-items: center;
+}
+section.section-2 div.preview-link p.link {
+  margin: 0;
+  font-family: "Everett";
+}
+section.section-2 div.preview-link img.link-arrow {
+  margin-left: 10px;
+  height: 12px;
+}
+
+section.section-4 {
+  padding-top: 1px;
+  background-color: #cbd3f0;
+}
+section.section-4 div.image {
+  display: flex;
+  justify-content: center;
+  margin: 0 56px;
+}
+section.section-4 div.image img.unsplash {
+  width: 100%;
+  max-width: 960px;
+}
+section.section-4 div.three-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 56px auto;
+  max-width: 960px;
+}
+section.section-4 div.three-points h3:first-child {
   margin-right: 56px;
 }
-section.page-2 div.three-points h3:nth-child(2) {
+section.section-4 div.three-points h3:nth-child(2) {
   margin-right: 56px;
   margin-left: 56px;
 }
-section.page-2 div.three-points h3:last-child {
+section.section-4 div.three-points h3:last-child {
   margin-left: 56px;
+}
+section.section-4 div.main-points {
+  max-width: 960px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.section-4 div.main-points li {
+  font-family: Helvetica, sans-serif;
 }
 
 html * {

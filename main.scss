@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+$maxWidth: 960px;
+
 $blue50: #ebefff;
 $blue100: #e1e7fa;
 $blue200: #cbd3f0; // def light
@@ -49,6 +51,13 @@ $tealDark: #437e84;
 $pinkLight: #f7e8f0;
 $red: #b0004a;
 $marginGeneral: 56px;
+
+a {
+  text-decoration: none;
+  color: $black900;
+}
+
+
 @font-face {
   font-family: "Everett";
   font-weight: normal;
@@ -72,16 +81,34 @@ h1 {
   font-weight: 500;
   font-size: 30px;
 }
+div.inner-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $maxWidth;
+}
+h1.section-header {
+  font-size: 50px;
+  margin-top: 140px;
+  margin-bottom: 80px;
+}
+h2 {
+  font-family: "Everett", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
 h3 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
 }
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
 section.page {
   min-height: 600px;
   //height: 100vh;
 }
-section.page-1 {
+section.section-1 {
   background: #fff;
   .top-bar {
     display: flex;
@@ -126,18 +153,60 @@ section.page-1 {
       object-fit: cover;
     }
   }
-  div.sub-slogan {
-    margin: $marginGeneral;
-    margin-left: calc(#{$marginGeneral} + 100px);
-  }
-}
-section.page-2 {
-  padding-top: 1px  ;
-  background-color: $yellow100;
-  div.three-points {
+  div.value-proposition {
+    margin: 56px 173px;
     display: flex;
     flex-direction: row;
-    margin: $marginGeneral;
+    p.label {
+      font-weight: bold;
+      width: 300px;
+    }
+    p.content {
+    }
+  }
+}
+section.section-2 {
+  background-color: $yellow100;
+  min-height: 300px;
+  padding-top: 0.1px;
+
+  div.between-page-header {
+    margin: $marginGeneral 173px;
+    h1.section-header {
+      margin-top: 4px;
+      margin-bottom: 50px;
+    }
+  }
+  div.preview-link {
+    display: flex;
+    align-items: center;
+    p.link {
+      margin: 0;
+      font-family: "Everett";
+    }
+    img.link-arrow {
+      margin-left: 10px;
+      height: 12px;
+    }
+  }
+}
+section.section-4 {
+  padding-top: 1px;
+  background-color: $bluelight;
+  div.image {
+    display: flex;
+    justify-content: center;
+    margin: 0 $marginGeneral;
+    img.unsplash {
+      width: 100%;
+      max-width: $maxWidth;
+    }
+  }
+  div.three-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: $marginGeneral auto;
+    max-width: $maxWidth;
     h3:first-child {
       margin-right: $marginGeneral;
     }
@@ -147,6 +216,15 @@ section.page-2 {
     }
     h3:last-child {
       margin-left: $marginGeneral;
+    }
+  }
+  div.main-points {
+    max-width: $maxWidth;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      font-family: Helvetica, sans-serif;
     }
   }
 }
