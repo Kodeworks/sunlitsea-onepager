@@ -37,6 +37,12 @@ div.inner-container {
   margin-right: auto;
   max-width: 1100px;
 }
+@media only screen and (max-width: 1100px) {
+  div.inner-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
 
 h1.section-header {
   font-size: 64px;
@@ -113,13 +119,17 @@ section.section-1 div.value-proposition {
   margin: 56px 173px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 }
 section.section-1 div.value-proposition p.label {
   font-size: 20px;
   font-weight: bold;
   width: 300px;
 }
+section.section-1 div.value-proposition div.content {
+  margin-left: 50px;
+}
+
 section.section-2 {
   background-color: #fff1a3;
   padding: 120px 0;
@@ -171,44 +181,31 @@ section.section-3 div.section-3-inner div.points span {
 }
 
 section.section-4 {
-  padding-top: 1px;
   background-color: #cbd3f0;
-  padding-bottom: 120px;
+  padding-top: 1px;
+  padding-bottom: 100px;
 }
-section.section-4 div.image {
+section.section-4 div.section-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section.section-4 div.section-inner div.point-grid {
+  display: grid;
+  width: 45%;
+  grid-template-columns: 1fr;
+  grid-column-gap: 100px;
+  grid-row-gap: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+section.section-4 div.section-inner div.image {
+  width: 45%;
   display: flex;
   justify-content: center;
-  margin: 0 56px;
 }
-section.section-4 div.image img.unsplash {
+section.section-4 div.section-inner div.image img {
   width: 100%;
-  max-width: 1100px;
-}
-section.section-4 div.three-points {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 100px;
-  margin: 56px auto;
-  max-width: 1100px;
-}
-section.section-4 div.three-points h3:first-child {
-  margin-right: 56px;
-}
-section.section-4 div.three-points h3:nth-child(2) {
-  margin-right: 56px;
-  margin-left: 56px;
-}
-section.section-4 div.three-points h3:last-child {
-  margin-left: 56px;
-}
-section.section-4 div.main-points {
-  max-width: 1100px;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-section.section-4 div.main-points li {
-  font-family: Helvetica, sans-serif;
 }
 
 section.section-5 div.partners {
@@ -245,33 +242,67 @@ section.footer {
   height: 300px;
   padding-top: 60px;
 }
+@media only screen and (max-width: 1100px) {
+  section.footer {
+    height: 400px;
+  }
+}
 section.footer div.footer-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-}
-section.footer div.logo {
-  margin-left: 56px;
   color: white;
+}
+section.footer div.footer-row div.grid {
+  width: 100%;
+  display: grid;
+  margin-left: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 50px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 1100px) {
+  section.footer div.footer-row div.grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 80px);
+  }
+}
+section.footer div.footer-row div.grid div.copyright {
+  grid-column: 1;
+  grid-row: 2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 1100px) {
+  section.footer div.footer-row div.grid div.copyright {
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px;
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+section.footer div.footer-row div.grid a {
+  text-decoration: underline;
+  color: white;
+}
+section.footer div.footer-row div.grid address {
+  font-style: normal;
+}
+section.footer div.footer-row div.logo {
+  margin-left: 56px;
   display: flex;
   align-items: center;
   flex-direction: row;
+  min-width: 225px;
 }
-section.footer div.logo .sunlitesa-logo {
+section.footer div.footer-row .sunlitesa-logo {
   position: relative;
   top: -1px;
   margin-right: 15px;
 }
-section.footer div.logo h1 {
+section.footer div.footer-row h1 {
   margin: 0;
   letter-spacing: 0.1rem;
-}
-section.footer div.copyright {
-  margin-left: 120px;
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-  margin-right: 56px;
 }
 
 html * {
