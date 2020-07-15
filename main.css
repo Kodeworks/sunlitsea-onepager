@@ -46,7 +46,7 @@ h1.section-header {
 h2 {
   font-family: "Everett", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h3 {
@@ -80,7 +80,7 @@ section.section-1 .top-bar .great-heading {
 }
 section.section-1 .top-bar .great-heading .sunlitesa-logo {
   position: relative;
-  top: -2px;
+  top: -1px;
   margin-right: 15px;
 }
 section.section-1 .top-bar .great-heading h1 {
@@ -113,8 +113,10 @@ section.section-1 div.value-proposition {
   margin: 56px 173px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 section.section-1 div.value-proposition p.label {
+  font-size: 20px;
   font-weight: bold;
   width: 300px;
 }
@@ -153,8 +155,14 @@ section.section-3 div.section-3-inner {
   align-items: center;
 }
 section.section-3 div.section-3-inner div.points {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+section.section-3 div.section-3-inner div.points span.bullet {
+  color: #fff1a3;
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  top: -3px;
 }
 section.section-3 div.section-3-inner div.points span {
   margin-top: 24px;
@@ -179,6 +187,7 @@ section.section-4 div.image img.unsplash {
 section.section-4 div.three-points {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 100px;
   margin: 56px auto;
   max-width: 1100px;
 }
@@ -200,6 +209,69 @@ section.section-4 div.main-points {
 }
 section.section-4 div.main-points li {
   font-family: Helvetica, sans-serif;
+}
+
+section.section-5 div.partners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 50px;
+  grid-auto-rows: 200px;
+}
+section.section-5 div.partners h3 {
+  font-size: 28px;
+  font-family: "Everett", sans-serif;
+}
+section.section-5 div.partners > div {
+  min-width: 0;
+}
+section.section-5 div.partners > div div.partners-logo {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section.section-5 div.partners > div div.partners-logo > * {
+  max-width: 100%;
+  max-height: 65px;
+}
+section.section-5 div.partners > div.innovation-norway {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+section.footer {
+  background-color: #101010;
+  height: 300px;
+  padding-top: 60px;
+}
+section.footer div.footer-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.footer div.logo {
+  margin-left: 56px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+section.footer div.logo .sunlitesa-logo {
+  position: relative;
+  top: -1px;
+  margin-right: 15px;
+}
+section.footer div.logo h1 {
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+section.footer div.copyright {
+  margin-left: 120px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-right: 56px;
 }
 
 html * {
