@@ -7,22 +7,24 @@
     />
     <link rel="icon" type="image/png" href="img/favicon.png" />
 
-    <link rel="stylesheet" href="styles/tailwind.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/tailwind.css" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header class="flex flex-col p-8 text-white h-1/2 sm:h-4/5">
+    <header class="flex flex-col p-8 text-white h-2/3 sm:h-4/5">
       <div class="flex items-center h-8">
         <img src="img/sunlitsea-logo-white.svg" class="h-5 mr-2" />
-        <span class="text-2xl uppercase">Sunlit Sea</span>
+        <span class="text-2xl font-semibold uppercase font-everett"
+          >Sunlit Sea</span
+        >
       </div>
 
       <div class="mt-auto mb-8 space-y-4 md:space-y-8 md:px-16 md:mb-24">
-        <h1 class="text-5xl font-semibold">
-          Floating <span class="text-yellow-300">Solar</span> Solutions
+        <h1 class="text-3xl font-semibold sm:text-5xl font-everett">
+          Floating <span class="text-yellow-200">Solar</span> Solutions
         </h1>
 
         <p class="text-lg">
@@ -33,19 +35,17 @@
       </div>
     </header>
 
-    <section>
-      <div>
-        <h1>
-          SunlitSea installation is inherently rugged, rapidly deployable, cost
-          efficient and safe.
-        </h1>
-        <a href="http://iiot.kodeworks.no" target="_blank">
-          <div>
-            <p>Preview a virtual installation</p>
-            <img src="img/link-arrow.svg" />
-          </div>
-        </a>
-      </div>
+    <section class="p-8 bg-yellow-200 sm:p-16 md:p-24">
+      <span class="text-3xl font-everett font-size md:text-5xl">
+        SunlitSea installation is inherently rugged, rapidly deployable, cost
+        efficient and safe.
+      </span>
+      <a href="http://iiot.kodeworks.no" target="_blank" rel="noreferrer">
+        <div class="mt-4 md:mt-8 font-everett">
+          <p class="inline mr-2 align-middle">Preview a virtual installation</p>
+          <img src="img/link-arrow.svg" class="inline h-2.5 align-middle" />
+        </div>
+      </a>
     </section>
 
     <section>

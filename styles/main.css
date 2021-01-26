@@ -3,3 +3,19 @@ body > header:first-child {
   background-size: cover;
   background-position: center center;
 }
+
+@font-face {
+  font-family: Everett;
+  src: url("../fonts/Everett-Regular-web.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Everett;
+  src: url("../fonts/Everett-Medium-web.woff") format("woff");
+  font-weight: 600;
+}
+
+.font-everett {
+  font-family: Everett;
+}
