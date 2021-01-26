@@ -1,2 +1,3 @@
-# sunlitsea-onepager
-Onepager website for Sunlit Sea
+# Sunlitsea.no
+
+Web page for [sunlitsea.no](https://sunlitsea.no).

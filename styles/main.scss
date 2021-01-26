@@ -1,0 +1,63 @@
+$blue50: #ebefff;
+$blue100: #e1e7fa;
+$blue200: #cbd3f0; // def light
+$blue300: #b4bce8;
+$blue400: #979fd9;
+$blue500: #737cc7;
+$blue600: #5a62ba; // def darker
+$blue700: #4b5494;
+$blue800: #3d446b;
+$blue900: #2f354f; // def darkest
+$bluecontrastText: #f5f5f5;
+$bluedark: #2f354f;
+$bluelight: #cbd3f0;
+$bluemain: $blue600;
+
+$white: #fff;
+$blackmain: #101010;
+$blacklight: #f5f5f5;
+$black50: #f5f5f5;
+$black100: #ededed;
+$black200: #e1e1e1;
+$black300: #cecece;
+$black400: #b8b8b8;
+$black500: #929292;
+$black600: #737373;
+$black700: #595959;
+$black800: #3c3c3c;
+$black900: #101010;
+
+$yellowmain: #ffe775;
+$yellow700: #ff8a57;
+$yellow50: #fff7c6;
+$yellow100: #fff1a3;
+$yellow200: #ffe775;
+$yellowcontrastText: #101010;
+$yellow300: #ffd46f;
+$yellow400: #ffc269;
+$yellow500: #ffaf63;
+$yellow600: #ff9c5d;
+$yellow800: #ff7751;
+$yellow900: #ff6242;
+
+$tealLight: #81d5c8;
+$tealDark: #437e84;
+$pinkLight: #f7e8f0;
+$red: #b0004a;
+$marginGeneral: 56px;
+
+@font-face {
+  font-family: "Everett";
+  font-weight: normal;
+  src: url("../fonts/Everett-Regular-web.woff") format("woff");
+}
+@font-face {
+  font-family: "Everett";
+  font-weight: 500;
+  src: url("../fonts/Everett-Medium-web.woff") format("woff");
+}
+@font-face {
+  font-family: "Everett";
+  font-weight: bold;
+  src: url("../fonts/Everett-Bold-web.woff") format("woff");
+}
