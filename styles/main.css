@@ -39,10 +39,25 @@ table tbody tr {
   color: lightgray;
 }
 
+img + span.font-everett {
+  letter-spacing: 0.1rem;
+}
+
 table tbody tr td:first-child {
-  min-width: 10rem;
+  min-width: 7rem;
   text-transform: uppercase;
   padding: 1rem 0;
+}
+
+/**
+ * Measurements taken from Tailwind
+ */
+@media screen and (min-width: 640px) {
+  table tbody tr td:first-child {
+    min-width: 10rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
 }
 
 table tbody tr td:nth-child(2) span {
