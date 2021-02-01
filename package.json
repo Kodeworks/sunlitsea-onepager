@@ -1,0 +1,23 @@
+{
+  "name": "sunlitsea-onepager",
+  "version": "1.0.0",
+  "description": "Web page for [sunlitsea.no](https://sunlitsea.no).",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss-cli@latest build -o styles/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kodeworks/sunlitsea-onepager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kodeworks/sunlitsea-onepager/issues"
+  },
+  "homepage": "https://github.com/Kodeworks/sunlitsea-onepager#readme",
+  "devDependencies": {
+    "tailwindcss": "^2.0.2"
+  }
+}

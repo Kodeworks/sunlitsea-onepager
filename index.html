@@ -5,242 +5,339 @@
       name="description"
       content="Novel technology for floating solar applications."
     />
-    <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/tailwind.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <section class="page section-1">
-      <div class="top-bar">
-        <div class="great-heading">
-          <img
-            class="sunlitesa-logo"
-            src="img/sunlitsea-logo.svg"
-            height="20px"
-          />
-          <h1>SUNLIT SEA</h1>
-        </div>
+    <!-- Header -->
+    <header class="flex flex-col h-full p-10 text-white">
+      <div class="flex items-center h-8">
+        <img src="img/logo.svg" class="h-5" />
       </div>
-      <div class="unsplash">
-        <img class="unsplash" src="unsplash-waves.jpg" />
-        <h1 class="unsplash-slogan">
-          Floating <span class="solar">Solar</span> Solutions
+
+      <div class="mt-auto mb-8 space-y-4 md:space-y-8 md:px-20 md:mb-44">
+        <h1 class="text-6xl font-semibold font-everett">
+          Floating <span class="text-yellow">Solar</span> Solutions
         </h1>
+
+        <p class="max-w-screen-lg text-xl">
+          Sunlit Sea is a technology provider to the floating solar industry.
+          Our goal is to achieve the lowest cost for floating solar electricity
+          which is achieved by combining prefabrication and a very clever design
+        </p>
       </div>
-      <div class="value-proposition">
-        <p class="label">Value proposition</p>
-        <div class="content">
-          <p>
-            Leveraging on prefabrication of solar arrays yields low costs, fewer
-            faults, high quality, superb HMS and quick installations.
-          </p>
-          <p>
-            Choice of material and form factor yields high packing density,
-            robustness, superb HMS, unprecedented cooling, less degradation and
-            lower operation and maintenance costs.
-          </p>
-          <p>
-            Sunlit Sea employs world leading expertise on hydrodynamics,
-            structural integrity, mooring and monitoring.
-          </p>
-        </div>
+    </header>
+
+    <!-- Prototype 2 -->
+    <section
+      class="px-8 py-12 space-y-8 md:h-screen lg:px-24 lg:pt-0 lg:pb-0 lg:grid lg:grid-cols-2 lg:gap-32 lg:space-y-0"
+    >
+      <div class="space-y-4 md:space-y-8 lg:self-center">
+        <h2 class="text-4xl font-everett md:text-5xl">Prototype 2</h2>
+        <p class="text-xl">
+          Sunlit Sea recently deployed prototype 2 of our floating solar
+          solution in the freezing water of the Oslo Fjord. Even at this stage,
+          it's easy to see that our end game logistics solution seems within
+          reach
+        </p>
+      </div>
+      <iframe
+        class="self-center w-full h-1/3 md:h-2/3"
+        src="https://www.youtube-nocookie.com/embed/tiyVhSERi-g"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- From manufacturing to deployment -->
+    <section
+      class="px-8 py-12 space-y-8 md:h-screen lg:px-24 lg:pb-0 lg:pt-0 lg:grid lg:grid-cols-2 lg:gap-32 lg:space-y-0"
+    >
+      <iframe
+        class="self-center w-full h-1/3 md:h-2/3"
+        src="https://www.youtube-nocookie.com/embed/Bv4ve25-6_g"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="space-y-4 md:space-y-8 lg:self-center">
+        <h2 class="text-4xl font-everett md:text-5xl">
+          From manufacturing to deployment
+        </h2>
+        <p class="text-xl">
+          Sunlit Sea recently deployed prototype 2 of our floating solar
+          solution in the freezing water of the Oslo Fjord. Even at this stage,
+          it's easy to see that our end game logistics solution seems within
+          reach
+        </p>
       </div>
     </section>
 
-    <section class="section-2">
-      <div class="between-page-header">
-        <h1 class="section-header">
-          SunlitSea installation is inherently rugged, rapidly deployable, cost
-          efficient and safe.
-        </h1>
-        <a href="http://iiot.kodeworks.no" target="_blank">
-          <div class="preview-link">
-            <p class="link">
-              Preview a virtual installation
-            </p>
-            <img class="link-arrow" src="img/link-arrow.svg" />
-          </div>
-        </a>
-      </div>
+    <!-- Preview -->
+    <section class="p-8 bg-yellow sm:p-16 lg:py-32 lg:px-44">
+      <span class="text-3xl font-everett md:text-5xl">
+        SunlitSea installation is inherently rugged, rapidly deployable, cost
+        efficient and safe.
+      </span>
+      <a href="http://iiot.kodeworks.no" target="_blank" rel="noreferrer">
+        <div class="mt-4 md:mt-8 font-everett">
+          <p class="inline mr-2 align-middle">Preview a virtual installation</p>
+          <img src="img/link-arrow.svg" class="inline h-2.5 align-middle" />
+        </div>
+      </a>
     </section>
 
-    <section class="section-3">
-      <div class="section-3-inner">
-        <div class="points">
-          <span class="bullet">01</span><span>Marine grade solution</span>
-          <span class="bullet">02</span
-          ><span>Lowest cost for solar electricity</span>
-          <span class="bullet">03</span><span>Inherently rugged solution</span>
-          <span class="bullet">04</span><span>Fastest installation time</span>
-          <span class="bullet">05</span
-          ><span>Unprecedented low aerodynamic drag</span>
-          <span class="bullet">06</span
-          ><span>Outstanding health, safety & environment</span>
-        </div>
-      </div>
+    <!-- Roadmap -->
+    <section
+      class="p-8 space-y-4 text-white bg-black sm:space-y-8 sm:p-16 lg:px-24"
+    >
+      <h2 class="text-2xl uppercase sm:text-4xl font-everett">Roadmap 2021</h2>
+      <table class="w-full text-white">
+        <thead>
+          <tr>
+            <th>When</th>
+            <th>Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>February</td>
+            <td>
+              <span>Share sales, ~3 MNOK. 1.4 MNOK done</span>
+              <span>MVP of web page with auto-quoting for new customers</span>
+              <span
+                >Prototype 3 deployment in Trondheim. 3 KWp. Hand manufactured
+                2x2 m2 floats with load cells and moist sensors</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>April</td>
+            <td>
+              <span>Share sales, ~3 MNOK</span>
+              <span
+                >Second full-time employee, Mr NN, hydrodynamics expert</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>May</td>
+            <td>
+              <span
+                >Press tool finished. Integration into manufacturing
+                pipeline</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>June</td>
+            <td>
+              <span>Prototype 4. First form-pressed float, 2x2 m2</span
+              ><span
+                >Manual manufacturing pipeline near Birmingham up and running
+                with welding, potting, electroluminescence testing and
+                packing</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>
+              <span>Water-ingress results from our research partner</span
+              ><span>Share sales, ~3 MNOK</span>
+            </td>
+          </tr>
+          <tr>
+            <td>August</td>
+            <td>
+              <span
+                >Prototype 5. Higher waves, module level shutdown. Strain
+                gauges</span
+              ><span>MVP of web-based FPV project planning tool</span>
+            </td>
+          </tr>
+          <tr>
+            <td>September</td>
+            <td>
+              <span>Pilot 1. 100 KWp. First deployment from containers</span>
+            </td>
+          </tr>
+          <tr>
+            <td>November</td>
+            <td>
+              <span>Share sales, ~3 MNOK</span>
+            </td>
+          </tr>
+          <tr>
+            <td>December</td>
+            <td>
+              <span
+                >Pilot 2. 200 KWp. Possibly in Trondheim at Brattørkaia</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
-    <section class="page section-4">
-      <div class="inner-container">
-        <h1 class="section-header">Key points</h1>
-      </div>
-      <div class="section-inner inner-container">
-        <div class="point-grid">
-          <div class="point">
-            <span>Novel technology for floating solar applications.</span>
-          </div>
-          <div class="point">
-            <span
-              >One stop shop for engineering, procurement and construction
-              projects.</span
-            >
-          </div>
-          <div class="point">
-            <span>Independent power producer agreements through partners.</span>
-          </div>
-          <div class="point">
-            <span>Sunlit Sea can provide project funding.</span>
-          </div>
-          <div class="point">
-            <span>Prototype installed in Oslo fjord, Norway, March 2020.</span>
-          </div>
-          <div class="point">
-            <span>Sunlit Sea Pakistan branch established in September 2020, Karachi harbor</span>
-          </div>
-          <div class="point">
-            <span>
-              In final negotiations regarding full scale installation of 1MW at
-              Lierstranda, Norway, Q2 2021.
-            </span>
-          </div>
-          <div class="point">
-            <span>
-              Planned production facility construction start in Karachi,
-              Pakistan, Q4 2022
-            </span>
-          </div>
-        </div>
-        <div class="image">
-          <img class="sunlitesa-logo" src="img/sunlitsea-logo.svg" />
-        </div>
-      </div>
+    <!-- About us -->
+    <section class="flex flex-col items-center p-8 sm:p-16 lg:p-24">
+      <h2 class="mb-8 text-4xl md:text-6xl font-everett">About us</h2>
+      <p class="max-w-screen-sm text-justify">
+        SunlitSea was founded in March 2019 by Per Lindberg and Kodeworks AS as
+        a technology provider to the floating solar industry. With a new and
+        rapidly growing market, SunlitSea aims to address the potential of
+        optimizing cost, longevity, power production, operation and maintenance,
+        degradation, safety and decommissioning. With an exceptionally great
+        team and support from our partners we are fit for this job and ready to
+        revolutionize ocean based floating solar.
+      </p>
+      <img
+        src="./img/sunlitsea-logo.svg"
+        alt="Sunlit sea logo, black."
+        class="w-20 mt-16"
+      />
     </section>
 
-    <section class="section-5">
-      <div class="inner-container">
-        <h1 class="section-header">Our partners</h1>
-      </div>
+    <section class="p-8 space-y-8 sm:p-16 lg:p-24">
+      <h2 class="mb-8 text-4xl md:text-6xl font-everett md:mb-16">
+        Our partners
+      </h2>
 
-      <div class="inner-container">
-        <div class="partners">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <h2 class="pb-2 font-semibold">Hydrodynamics</h2>
           <div>
-            <h2>Hydrodynamics</h2>
-            <div class="partners-logo">
-              <img src="img/partners-1-1.png" alt="Stadt Towing Tank" />
-              <img src="img/partners-1-2.png" alt="Universitetet i Oslo" />
-            </div>
-          </div>
-          <div>
-            <h2>Detailed engineering</h2>
-            <div class="partners-logo">
-              <img src="img/partners-2-1.png" alt="Ceiia" />
-            </div>
-          </div>
-          <div>
-            <h2>Technical consultancy</h2>
-
-            <div class="partners-logo">
-              <img src="img/partners-3-1.png" alt="Multiconsult" />
-            </div>
-          </div>
-          <div>
-            <h2>Sheet metal forming</h2>
-
-            <div class="partners-logo">
-              <img src="img/partners-4-1.png" alt="Accura" />
-            </div>
-          </div>
-          <div>
-            <h2>Industrial partners</h2>
-
-            <div class="partners-logo">
-              <img src="img/partners-5-1.png" />
-            </div>
-          </div>
-          <div>
-            <h2>Monitoring and data analysis</h2>
-
-            <div class="partners-logo">
-              <img src="img/partners-6-1.png" alt="Kodeworks" />
-            </div>
-          </div>
-
-          <div class="innovation-norway">
             <img
-              src="img/partners-7-1.png"
-              style="
-                max-width: 180px;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-              "
-              alt="Innovation norway"
+              src="img/partners-1-1.png"
+              alt="Stadt Towing Tank"
+              class="inline-block w-2/5"
+            />
+            <img
+              src="img/partners-1-2.png"
+              alt="Universitetet i Oslo"
+              class="inline-block w-2/5"
             />
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="footer">
-      <div class="footer-row">
-        <div class="logo">
+        <div>
+          <h2 class="pb-2 font-semibold">Detailed engineering</h2>
+          <div>
+            <img
+              src="img/partners-2-1.png"
+              alt="Ceiia"
+              class="w-2/5 md:w-3/5"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h2 class="pb-2 font-semibold">Technical consultancy</h2>
+          <div>
+            <img
+              src="img/partners-3-1.png"
+              alt="Multiconsult"
+              class="w-2/5 md:w-4/5"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h2 class="pb-2 font-semibold">Sheet metal forming</h2>
+          <div>
+            <img
+              src="img/partners-4-1.png"
+              alt="Accura"
+              class="w-2/5 md:w-4/5"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h2 class="pb-2 font-semibold">Industrial partners</h2>
+          <div>
+            <img src="img/partners-5-1.png" class="w-2/5 md:w-4/5" />
+          </div>
+        </div>
+
+        <div>
+          <h2 class="pb-2 font-semibold">Monitoring and data analysis</h2>
+          <div>
+            <img
+              src="img/partners-6-1.png"
+              alt="Kodeworks"
+              class="w-2/5 md:w-4/5"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h2 class="pb-2 font-semibold">Funding</h2>
           <img
-            class="sunlitesa-logo"
-            src="img/sunlitsea-logo-white.svg"
-            height="20px"
+            src="img/partners-7-1.png"
+            alt="Innovation Norway"
+            class="w-2/5 md:w-3/5"
           />
-          <h1>SUNLIT SEA</h1>
         </div>
-        <div class="grid">
-          <div class="established">
-            <span>Established in 2019</span>
-            <a style="display: block;" href="https://sunlitsea.no/"
-              >sunlitsea.no</a
-            >
-          </div>
 
-          <div>
-            <address>
-              <a href="mailto:per@sunlitsea.no">per@sunlitsea.no</a>
-              +47 97079523
-              <br />
-              <a href="mailto:eirik@sunlitsea.no">eirik@sunlitsea.no</a>
-              +47 41670269
-            </address>
-          </div>
-
-          <div>
-            <span>Registration number 922 633 924 </span>
-            <br />
-            <span
-              >Fjordgata 30, 7010 Trondheim,<br />
-              Norway</span
-            >
-          </div>
-          <div class="copyright">Copyright SunlitSea AS 2020</div>
+        <div>
+          <h2 class="pb-2 font-semibold">Research</h2>
+          <img
+            src="img/forskningsradet.svg"
+            alt="Forsningsrådet"
+            class="w-2/5 md:w-3/5"
+          />
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer
+      class="grid grid-cols-1 gap-4 p-8 text-white bg-black md:grid-cols-2 lg:grid-cols-4 sm:p-16 lg:px-24"
+    >
+      <div>
+        <img src="img/logo.svg" class="w-56 align-middle" />
+      </div>
+
+      <div>
+        <p>Established in 2019</p>
+        <a class="underline" href="https://sunlitsea.no/">sunlitsea.no</a>
+      </div>
+
+      <div>
+        <address>
+          <div>
+            <a class="not-italic underline" href="mailto:per@sunlitsea.no"
+              >per@sunlitsea.no</a
+            >
+            <a href="tel:+4797079523">+47 970 79 523</a>
+          </div>
+          <div>
+            <a class="not-italic underline" href="mailto:eirik@sunlitsea.no"
+              >eirik@sunlitsea.no</a
+            >
+            <a href="tel:+4741670269">+4741670269</a>
+          </div>
+        </address>
+      </div>
+
+      <div>
+        <span>Registration number 922 633 924 </span>
+        <br />
+        <span
+          >Fjordgata 30, 7010 Trondheim,<br />
+          Norway</span
+        >
+      </div>
+
+      <div class="lg:col-start-2">Copyright SunlitSea AS 2021</div>
+    </footer>
   </body>
 </html>

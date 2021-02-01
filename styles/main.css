@@ -1,0 +1,66 @@
+body > header:first-child {
+  background-image: url("../img/waves.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+@font-face {
+  font-family: Everett;
+  src: url("../fonts/Everett-Regular-web.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Everett;
+  src: url("../fonts/Everett-Medium-web.woff") format("woff");
+  font-weight: 500;
+}
+
+.font-everett {
+  font-family: Everett;
+}
+
+table thead {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+table thead tr th {
+  padding-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
+table tbody tr:not(:last-child) {
+  border-bottom: 0.5px solid lightgray;
+}
+
+table tbody tr {
+  font-size: 0.75rem;
+  color: lightgray;
+}
+
+img + span.font-everett {
+  letter-spacing: 0.1rem;
+}
+
+table tbody tr td:first-child {
+  min-width: 7rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+/**
+ * Measurements taken from Tailwind
+ */
+@media screen and (min-width: 640px) {
+  table tbody tr td:first-child {
+    min-width: 10rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
+}
+
+table tbody tr td:nth-child(2) span {
+  display: block;
+  margin: 0.5rem 0;
+}
