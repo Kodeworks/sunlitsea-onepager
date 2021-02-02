@@ -638,6 +638,10 @@ video {
   margin-top: auto;
 }
 
+.max-h-24 {
+  max-height: 6rem;
+}
+
 .max-w-screen-sm {
   max-width: 640px;
 }
